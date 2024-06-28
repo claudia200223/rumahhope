@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album 1 - Rumah Hope</title>
+    <style>body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    gap:10px
+}
+
+il {
+    transition: 0.4s all ease;
+}
+ul:hover li{
+    filter: blur(5px);
+}
+ul li:hover {
+    filter: blur(0);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #007BFF;
+}
+
+
+
+ .album-section {
+            position: relative;
+            background-image: url('wallpaper.jpg');
+            height: 85vh;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .album-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+
+        .album-section > div {
+            position: relative;
+            z-index: 2;
+        }
+
+
+.album-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}</style>
+    <link rel="icon" href="tlogo.png" type="image/icon type">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">RUMAH HOPE</a>
+            </div>
+            <nav>
+                <ul>
+                
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a class="active" href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="wish.html">WISH LIST</a></li>
+                    <li><a href="miss.html">MISSION AND VISION</a></li>
+                    <li><a href="lo.html">LOCATION</a></li>
+                    <li><a href="cont.html">CONTACT</a></li>
+	    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="album-section">
+        <div class="container">
+            <h1>COLOURING COMPETITION ORGANIZED BY RUMAH HOPE FOR CHILDREN(17 MARCH 2020)</h1>
+            <div class="photo-grid">
+                
+                        <img src="72.jpeg" alt="Album 1 Photo 1">
+                        <img src="73.jpeg" alt="Album 1 Photo 2">
+                        <img src="74.jpeg" alt="Album 1 Photo 3">
+                        <img src="75.jpeg" alt="Album 1 Photo 4">
+                        <img src="76.jpeg" alt="Album 1 Photo 5">
+                        <img src="77.jpeg" alt="Album 1 Photo 6">
+                        <img src="78.jpeg" alt="Album 1 Photo 7">
+                        <img src="79.jpeg" alt="Album 1 Photo 8">
+                        <img src="80.jpeg" alt="Album 1 Photo 9">
+                        <img src="81.jpeg" alt="Album 1 Photo 10">
+                        <img src="82.jpeg" alt="Album 1 Photo 11">
+                        <img src="83.jpeg" alt="Album 1 Photo 12">
+                        
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Rumah Hope. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Map - Rumah Hope</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: transparent;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        il {
+            transition: 0.4s all ease;
+        }
+
+        ul:hover li {
+            filter: blur(5px);
+        }
+
+        ul li:hover {
+            filter: blur(0);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar nav ul li {
+            margin-left: 20px;
+        }
+
+        .navbar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .map-section {
+            padding: 100px 20px;
+            background-color: #f8f9fa;
+            position: relative;
+            background-image: url('wallpaper.jpg'); 
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .map-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+
+        .map-section > div {
+            position: relative;
+            z-index: 2;
+        }
+
+        .map-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #333;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: visible;
+            padding-top: 30.25%;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .map-links {
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    padding: 6px 0;
+    font-size: 12px;
+}
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <link rel="icon" href="tlogo.png" type="image/icon type">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">RUMAH HOPE</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="wish.html">WISH LIST</a></li>
+                    <li><a href="miss.html">MISSION AND VISION</a></li>
+                    <li><a class="active" href="map.html">LOCATION</a></li>
+                    <li><a href="cont.html">CONTACT</a></li>
+	    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="map-section">
+        <div class="container">
+            <h1><font color=white>Our Location</font></h1>
+            <div class="map-container">
+                <iframe src="https://www.bing.com/maps/embed?h=800&w=1080&cp=3.110027~101.629715&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" width="100%" height="1080" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div style="white-space: nowrap; text-align: center; width: 1080px; padding: 6px 0;">
+                    <a id="largeMapLink" href="https://www.bing.com/maps?cp=3.110027~101.629715&amp;sty=r&amp;lvl=16&amp;dir=0&amp;form=LMLTCC" target="_blank" style="font-size: 12px;" class="btn">View Larger Map</a> &nbsp; | &nbsp;
+                    <a id="dirMapLink" href="https://www.bing.com/maps/directions?cp=3.110027~101.629715&amp;sty=r&amp;lvl=16&amp;rtp=~pos.3.110027_101.629715_Rumah+Hope" target="_blank" style="font-size: 12px;" class="btn">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Rumah Hope. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-image: url(wallpaper.jpg);  
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.ul {
+    list-style: none;
+    display: flex;
+    gap:10px
+}
+
+il {
+    transition: 0.4s all ease;
+}
+ul:hover li{
+    filter: blur(5px);
+}
+ul li:hover {
+    filter: blur(0);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.content {
+    background-color: rgba(240, 240, 240, 240);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #007BFF;
+}
+
+.about-section {
+    background-image: url('wallpaper.jpg');
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 60px; 
+        }
+
+.about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+
+.about-section > div {
+            position: relative;
+            z-index: 2;
+        }
+
+.about-section {
+    padding-top: 80px; 
+    padding: 40px 20px;
+    background-color: transparent;
+    color: #333;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.about-section .about-photo {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.about-section .content {
+    width: 50%;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+ }.anim {
+    	opacity: 0;
+    	transform: translateY(30px);
+    	animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+   	 100% {
+        	       opacity: 1;
+        	       transform: translateY(0px);
+ }
+}

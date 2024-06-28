@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Rumah Hope</title>
+    <style>body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.ul {
+    list-style: none;
+    display: flex;
+    gap:10px
+}
+
+il {
+    transition: 0.4s all ease;
+}
+ul:hover li{
+    filter: blur(5px);
+}
+ul li:hover {
+    filter: blur(0);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #007BFF;
+}
+
+.activities-section {
+    padding-top: 100px;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.activities-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+        .activities-section {
+            position: relative;
+            background-image: url('wallpaper.jpg');
+            height: 120vh;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .activities-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .activities-section > div {
+            position: relative;
+            z-index: 2;
+        }
+
+.activities-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.album-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.album-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.photo-container {
+    display: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+</style>
+    <link rel="icon" href="tlogo.png" type="image/icon type">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">RUMAH HOPE</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a class="active" href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="wish.html">WISH LIST</a></li>
+                    <li><a href="miss.html">MISSION AND VISION</a></li>
+                    <li><a href="lo.html">LOCATION</a></li>
+                    <li><a href="cont.html">CONTACT</a></li>
+	     <li><a href="volunteer.html">VOLUNTEER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="activities-section">
+        <div class="container">
+            <h1><font color=white>Our Activities</font></h1>
+            <div class="album-grid">
+                
+                <div class="album-box">
+                    <h2 class="album-title">POLICE AND THIEF GAME ORGANIZED BY THE YOUTHS OF RUMAH HOPE AND GARDENING USE EGG SHELL.</h2>
+                    <div class="photo-container">
+                        <img src="24.jpg" alt="Album 1 Photo 1">
+                    </div>
+                    <button class="view-all-btn" onclick="window.location.href='album1.html'">View All Photos</button>
+                </div>
+                
+                <div class="album-box">
+                    <h2 class="album-title">SALAM MERDEKA 2021 @ RH</h2>
+                    <div class="photo-container">
+                        <img src="62.jpg" alt="Album 2 Photo 1">
+                    </div>
+                    <button class="view-all-btn" onclick="window.location.href='album2.html'">View All Photos</button>
+                </div>
+                
+                <div class="album-box">
+                    <h2 class="album-title">COLOURING COMPETITION ORGANIZED BY RUMAH HOPE FOR CHILDREN(17 MARCH 2020)</h2>
+                    <div class="photo-container">
+                        <img src="72.jpeg" alt="Album 3 Photo 1">
+                    </div>
+                    <button class="view-all-btn" onclick="window.location.href='album3.html'">View All Photos</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Rumah Hope. All rights reserved.</p>
+    </footer>
+</body>
+</html>

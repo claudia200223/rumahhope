@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rumah Hope</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: transparent;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ul {
+            list-style: none;
+            display: flex;
+            gap:10px
+        }
+
+        il {
+            transition: 0.4s all ease;
+        }
+        ul:hover li{
+            filter: blur(5px);
+        }
+        ul li:hover {
+            filter: blur(0);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar nav ul li {
+            margin-left: 20px;
+        }
+
+        .navbar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .contact-section {
+            padding: 100px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .contact-section {
+            position: relative;
+            background-image: url('wallpaper.jpg'); 
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+
+        .contact-section > div {
+            position: relative;
+            z-index: 2;
+        }
+        .contact-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info, .social-info {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p, .social-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact-info a, .social-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover, .social-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <link rel="icon" href="tlogo.png" type="image/icon type">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">RUMAH HOPE</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="wish.html">WISH LIST</a></li>
+                    <li><a href="miss.html">MISSION AND VISION</a></li>
+                    <li><a href="lo.html">LOCATION</a></li>
+                    <li><a class="active" href="cont.html">CONTACT</a></li>
+	    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact-section">
+        <div class="container">
+            <h1><font color=white>Contact Us</font></h1>
+            <div class="info-box">
+                <div class="contact-info">
+                    <h2><font color=black>Contact Info</font></h2>
+                    <p><strong>Address:</strong> No. 45, Jalan 20/2, Paramount Garden,<br>
+                        46300 Petaling Jaya, Selangor, Malaysia</p>
+                    <p><strong>Tel:</strong> +03-7954 5523</p>
+                    <p><strong>Fax:</strong> +03-7954 5722</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@rumahhope.com">info@rumahhope.com</a></p>
+                </div>
+                <div class="social-info">
+                    <h2><font color=black>Social Media</font></h2>
+                    <p><strong>Facebook:</strong> <a href="https://web.facebook.com/rumahhope?_rdc=1&_rdr" target="_blank">https://web.facebook.com/rumahhope</a></p>
+                    <p><strong>Youtube:</strong> <a href="https://www.youtube.com/rumahhope" target="_blank">https://www.youtube.com/rumahhope</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Rumah Hope. All rights reserved.</p>
+    </footer>
+</body>
+</html>

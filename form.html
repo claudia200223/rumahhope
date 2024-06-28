@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Optima', sans-serif;
+            overflow-x: hidden;
+            background-attachment: fixed;
+            background-image: url('wallpaper.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar nav ul li {
+            transition: 0.4s all ease;
+        }
+
+        .navbar nav ul:hover li {
+            filter: blur(5px);
+        }
+
+        .navbar nav ul li:hover {
+            filter: blur(0);
+        }
+
+        .navbar nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .form-container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 100px auto 20px;
+            background-color: rgba(240, 240, 240, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <link rel="icon" href="tlogo.png" type="image/icon type">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">RUMAH HOPE</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="wish.html">WISH LIST</a></li>
+                    <li><a href="miss.html">MISSION AND VISION</a></li>
+                    <li><a href="lo.html">LOCATION</a></li>
+                    <li><a href="cont.html">CONTACT</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="form-container">
+        <h1>Enquiry Form</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" size="50" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" size="5" maxlength="5" required>
+
+            <label for="id">Member's ID:</label>
+            <input type="password" id="id" name="id" size="8" maxlength="8" required>
+
+            <input type="submit" class="btn-submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rumah Hope. All rights reserved.</p>
+    </footer>
+</body>
+</html>

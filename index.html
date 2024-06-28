@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Home</title>
+    <style>
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    gap:10px
+}
+
+il {
+    transition: 0.4s all ease;
+}
+ul:hover li{
+    filter: blur(5px);
+}
+ul li:hover {
+    filter: blur(0);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #007BFF;
+}
+
+
+
+.hero-section {
+    background-image: url('wallpaper.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 60px; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hero-content h2 {
+    font-size: 4.5rem;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+
+ }.anim {
+    	opacity: 0;
+    	transform: translateY(30px);
+    	animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+   	 100% {
+        	       opacity: 1;
+        	       transform: translateY(0px);
+ }
+}
+
+footer p {
+    margin: 0;
+}
+</style>
+    <link rel="icon" href="tlogo.png" type="image/icon type">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">RUMAH HOPE</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="wish.html">WISH LIST</a></li>
+                    <li><a href="miss.html">MISSION AND VISION</a></li>
+                    <li><a href="lo.html">LOCATION</a></li>
+                    <li><a href="cont.html">CONTACT</a></li>
+	     <li><a href="volunteer.html">VOLUNTEER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="anim">RUMAH HOPE</h2>
+                <h1 class="anim">CHILDREN'S HOME</h1>
+                <p class="anim">Rumah Hope is a sanctuary for abused, neglected and under-privileged children between the ages of 5-17. The Home is registered with Registrar of Societies is also registered with the Selangor Welfare Council and it has been granted Tax Exemption status by the Ministry of Finance. </p>
+                <marquee>#GIVELOVEGIVEHOPE</marquee>
+	<br>
+	<br>
+                <a href="https://rumahhope.com/" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Rumah Hope. All rights reserved.</p>
+    </footer>
+</body>
+</html>
